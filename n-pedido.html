@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/img/favicons/selo-sam2.ico">
+	  
+	  <!-- ####################### FONT AWESOME ####################### -->
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	  <!-- ####################### //FONT AWESOME ####################### -->
+
+
+    <title>Novo Pedido</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Brabesa do SAM</a>
+      <!--<input class="form-control form-control-dark w-100" type="text" placeholder="Pesquisar" aria-label="Search">-->
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sair</a>
+        </li>
+      </ul>
+    </nav>
+
+	  <div class="container-fluid">
+		<div class="row">
+			<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+				<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Manutenção</a>
+			 	<!--##### CAIXA DE PESQUISA ##### 
+					  <input class="form-control form-control-dark w-100" type="text" placeholder="Pesquisar" aria-label="Search">
+				<ul class="navbar-nav px-3">
+					<li class="nav-item text-nowrap">
+						<a class="nav-link" href="#">Sair</a>
+					</li>
+				</ul> -->
+			</nav>
+		  </div>
+	  </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="p-aberto.html">
+                  <span class="fa fa-folder-open"></span>
+                  Pedidos em aberto
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="p-andamento.html">
+                 <span class="fa fa-folder"></span>
+                  Pedidos em Andamento
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="p-finalizado.html">
+                  <span class="fa fa-shopping-cart"></span>
+                  Pedidos Finalizados	
+                </a>
+              </li>
+			<!--
+              <li class="nav-item">
+                <a class="nav-link" href="clientes.html">
+                  <span data-feather="users"></span>
+                  Clientes
+                </a>
+              </li>
+			-->
+            </ul>
+
+          </div>
+        </nav>
+		  
+		  <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+			<form>
+				<h1>Pedidos de Manutenção</h1>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="inputSetor">Setor</label>
+						<select id="inputSetor" class="form-control">
+							<option selected>Escolher...</option>
+							<option value="EL">Elétrica</option>
+							<option value="MG">Mecânica Gereal</option>
+							<option value="TI">Informática</option>
+						</select>
+					</div>
+				
+					<div class="form-group col-md-6">
+						<label for="inputPrioridade">Prioridade</label>
+						<select id="inputPrioridade" class="form-control">
+							<option selected>Escolher...</option>
+							<option value="ALTA">Alta</option>
+							<option value="MEDIA">Média</option>
+							<option value="BAIXA">Baixa</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="form-row">
+					<div class="form-group col-md-12">
+						<label for="inputServico">Serviço</label>
+						<input type="text" class="form-control" id="inputServico" placeholder="Serviço a ser realizado" required="">
+					</div>
+				</div>
+				
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="inputSolicitante">Solicitante</label>
+						<input type="text" class="form-control" id="inputSolicitante" placeholder="Solicitante do serviço" required="">
+					</div>
+					<div class="form-group col-md-4">
+						<label for="inputSetor">Setor</label>
+						<input type="text" class="form-control" id="inputSetor" placeholder="Setor do solicitante do serviço" required="">
+					</div>
+
+					<div class="form-group col-md-2">
+						<label for="inputPrazoMX">Prazo Máximo</label>
+						<input type="date" class="form-control" id="inputPrazoMX">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="Descricao">Descrição</label>
+					<textarea class="form-control" id="Descricao" rows="4" placeholder="Descrição"></textarea>
+				</div>
+		
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				
+			</form>
+			  
+		  </main>
+		</div>
+    </div>
+	  <div id="rodape" >
+		  <span class="footer-text">© Copyright 2018 - Kaue - JoJo | JoJo -Kaue, todos os direitos reservados.</span>
+	  </div>
+
+
+	  
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

@@ -105,5 +105,7 @@ body {
 	position: absolute;
 	bottom: 0;
 	right: 1%;
+	text-align: right;
+	/*margin-top: 170px;*/
 	
 }

@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="favicon.ico">
+
+	<title>Dashboard Template for Bootstrap</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!-- Custom styles for this template -->
+	<link href="dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+		<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+			<span class="fa fa-shopping-cart"></span>
+			Pedidex
+		</a>
+
+		<ul class="navbar-nav px-3">
+			<li class="nav-item text-nowrap">
+				<a class="nav-link" href="#">
+					<span class="fa fa-sign-out-alt"></span>
+					Sair
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+				<div class="sidebar-sticky">
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link active" href="adm-usuarios.html">
+								<span class="fa fa-square"></span>
+								Usuários <span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<span class="fa fa-check-square"></span>
+								Setores
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</nav>
+
+			<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+				<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-0">
+					<h1 class="h2">Listagem de Usuários</h1>
+					<div class="btn-toolbar mb-2 mb-md-0">
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-sm btn-outline-success" data-toggle="modal" data-target="#novasolicitacao">
+							<span class="fa fa-share-square"></span>
+							Novo Usuário
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="novasolicitacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-header d-flex justify-content-center align-itens-center container">
+										<h1 class="modal-title" id="exampleModalCenterTitle">Novo Usuário</h1>
+									</div>
+									<div class="modal-body">
+										<form>
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<label for="inputSetor">Nome</label>
+													<input type="text" class="form-control" id="inputNovoUsuario" placeholder="Nome do usuário" required="">
+												</div>
+
+												<div class="form-group col-md-6">
+													<label for="inputPrioridade">Setor</label>
+													<input type="text" class="form-control" id="inputSetorUsuario" placeholder="Setor do usuário" required="">
+												</div>
+												<div class="form-group col-md-6">
+													<label for="inputPrioridade">Contato</label>
+													<select class="form-control">
+														<option>Default select</option>
+														<option>Default select</option>
+														<option>Default select</option>
+													</select>
+												</div>
+												<div class="form-group col-md-6">
+													<label for="exampleFormControlInput1">Email</label>
+													<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@example.com">
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+										<button type="submit" class="btn btn-success">Enviar Pedido</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Modal -->
+					</div>
+				</div>
+				<div class="table-responsive">
+					<table class="table table-striped table-sm">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Nome</th>
+								<th>Telefone</th>
+								<th>E-mail</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1001</td>
+								<td>João da Silva</td>
+								<td>(48) 9 9832-3549</td>
+								<td>joao@gmail.com</td>
+								<td class="text-right">
+									<a href="cliente.form.html" class="btn btn-sm btn-info">
+										<span class="fa fa-edit"></span>
+									</a>
+									<a href="#" class="btn btn-sm btn-danger">
+										<span class="fa fa-trash-alt"></span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>1001</td>
+								<td>João da Silva</td>
+								<td>(48) 9 9832-3549</td>
+								<td>joao@gmail.com</td>
+								<td class="text-right">
+									<a href="cliente.form.html" class="btn btn-sm btn-info">E</a>
+									<a href="#" class="btn btn-sm btn-danger">X</a>
+								</td>
+							</tr>
+							<tr>
+								<td>1001</td>
+								<td>João da Silva</td>
+								<td>(48) 9 9832-3549</td>
+								<td>joao@gmail.com</td>
+								<td class="text-right">
+									<a href="cliente.form.html" class="btn btn-sm btn-info">E</a>
+									<a href="#" class="btn btn-sm btn-danger">X</a>
+								</td>
+							</tr>
+							<tr>
+								<td>1001</td>
+								<td>João da Silva</td>
+								<td>(48) 9 9832-3549</td>
+								<td>joao@gmail.com</td>
+								<td class="text-right">
+									<a href="cliente.form.html" class="btn btn-sm btn-info">E</a>
+									<a href="#" class="btn btn-sm btn-danger">X</a>
+								</td>
+							</tr>
+							<tr>
+								<td>1001</td>
+								<td>João da Silva</td>
+								<td>(48) 9 9832-3549</td>
+								<td>joao@gmail.com</td>
+								<td class="text-right">
+									<a href="cliente.form.html" class="btn btn-sm btn-info">E</a>
+									<a href="#" class="btn btn-sm btn-danger">X</a>
+								</td>
+							</tr>
+							<tr>
+								<td>1001</td>
+								<td>João da Silva</td>
+								<td>(48) 9 9832-3549</td>
+								<td>joao@gmail.com</td>
+								<td class="text-right">
+									<a href="cliente.form.html" class="btn btn-sm btn-info">E</a>
+									<a href="#" class="btn btn-sm btn-danger">X</a>
+								</td>
+							</tr>
+							<tr>
+								<td>1001</td>
+								<td>João da Silva</td>
+								<td>(48) 9 9832-3549</td>
+								<td>joao@gmail.com</td>
+								<td class="text-right">
+									<a href="cliente.form.html" class="btn btn-sm btn-info">E</a>
+									<a href="#" class="btn btn-sm btn-danger">X</a>
+								</td>
+							</tr>
+							<tr>
+								<td>1001</td>
+								<td>João da Silva</td>
+								<td>(48) 9 9832-3549</td>
+								<td>joao@gmail.com</td>
+								<td class="text-right">
+									<a href="cliente.form.html" class="btn btn-sm btn-info">E</a>
+									<a href="#" class="btn btn-sm btn-danger">X</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<nav aria-label="Navegação de página exemplo">
+					<ul class="pagination justify-content-end">
+						<li class="page-item disabled">
+							<a class="page-link" href="#" tabindex="-1">
+								<span class="fa fa-backward"></span>
+								Anterior
+							</a>
+						</li>
+						<li class="page-item active"><a class="page-link" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item">
+							<a class="page-link" href="#">
+								Próximo
+								<span class="fa fa-forward"></span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</main>
+		</div>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script>
+		window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')
+
+	</script>
+	<script src="assets/js/vendor/popper.min.js"></script>
+	<script src="dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

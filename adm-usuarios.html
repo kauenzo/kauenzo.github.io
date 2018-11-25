@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="assets/img/logo-bj.png">
 
-    <title>Dashboard Template for Bootstrap</title>
+    <title>Usuários</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
 
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="admin.html">
                     <span class="fa fa-sign-out-alt"></span>
                     Sair
                 </a>
@@ -125,6 +125,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <!-- USER #1 -->
                             <tr>
                                 <td>001</td>
                                 <td>João da Silva</td>
@@ -132,48 +133,50 @@
                                 <td>joao@gmail.com</td>
                                 <td>Administração</td>
                                 <td class="text-right">
-                                    <a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#edituser0">
+                                    <button type="button" data-toggle="modal" data-target="#edituser1" class="btn btn-sm btn-info">
                                         <span class="fa fa-edit"></span>
-                                    </a>
+                                    </button>
 
-                                    <a href="#" class="btn btn-sm btn-danger">
+                                    <button type="button" data-toggle="modal" data-target="#disableuser1" class="btn btn-sm btn-danger">
                                         <span class="fa fa-trash-alt"></span>
-                                    </a>
+                                    </button>
+                                    
                                 </td>
-                                <!-- Modal -->
-                                <div class="modal fade" id="edituser0" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <!-- EDIT USER-->
+                                <div class="modal fade" id="edituser1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header d-flex justify-content-center align-itens-center container">
-                                                <h1 class="modal-title" id="exampleModalCenterTitle">ALTERAR DADOS DO USUÁRIO</h1>
+                                                <h1 class="modal-title" id="exampleModalCenterTitle">Editar Usuário</h1>
                                             </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="form-row">
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputSetor">Nome</label>
-                                                            <input type="text" class="form-control" id="inputNovoUsuario" disabled>
-                                                        </div>
+                                            
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputSetor">Nome</label>
+                                                    <input type="text" class="form-control" id="inputNovoUsuario" placeholder="Nome do usuário" required="">
+                                                </div>
 
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Setor</label>
-                                                            <select class="form-control">
-                                                                <option>Escolher</option>
-                                                                <option>Setor 1</option>
-                                                                <option>Setor 2</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Contato</label>
-                                                            <input type="text" class="form-control" id="inputSetorUsuario" placeholder="(00) 9 8765 4321" required="">
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="exampleFormControlInput1">Email</label>
-                                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@example.com">
-                                                        </div>
-                                                    </div>
-                                                </form>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPrioridade">Setor</label>
+                                                    <select class="form-control">
+                                                        <option>Escolher</option>
+                                                        <option>Setor 1</option>
+                                                        <option>Setor 2</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPrioridade">Contato</label>
+                                                    <input type="text" class="form-control" id="inputSetorUsuario" placeholder="(00) 9 8765 4321" required="">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="exampleFormControlInput1">Email</label>
+                                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@example.com">
+                                                </div>
                                             </div>
+                                        </form>
+                                    </div>
                                             <div class="modal-footer">
                                                 <button type="reset" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                                                 <button type="submit" class="btn btn-success">Alterar</button>
@@ -181,8 +184,31 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /Modal -->
+                                <!-- /EDIT USER -->
+                                <!-- DISABLE USER-->
+                                <div class="modal fade" id="disableuser1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header d-flex justify-content-center align-itens-center container">
+                                                <h2 class="modal-title" id="exampleModalCenterTitle">Você tem certeza que quer desativar este usuário?</h2>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form id="disablesetor">
+                                                    <div class="modal-content text-center">
+                                                        <button type="reset" class="btn btn-success" data-dismiss="modal">Cancelar</button>
+                                                        <br>
+                                                        <button type="submit" class="btn btn-danger">Desativar</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /DESABLE USER -->
                             </tr>
+                            <!-- /USER #1 -->
+                            <!-- USER #2 -->
                             <tr>
                                 <td>002</td>
                                 <td>João da Silva</td>
@@ -190,48 +216,50 @@
                                 <td>joao@gmail.com</td>
                                 <td>Administração</td>
                                 <td class="text-right">
-                                    <a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#edituser1">
+                                    <button type="button" data-toggle="modal" data-target="#edituser2" class="btn btn-sm btn-info">
                                         <span class="fa fa-edit"></span>
-                                    </a>
+                                    </button>
 
-                                    <a href="#" class="btn btn-sm btn-danger">
+                                    <button type="button" data-toggle="modal" data-target="#disableuser2" class="btn btn-sm btn-danger">
                                         <span class="fa fa-trash-alt"></span>
-                                    </a>
+                                    </button>
+                                    
                                 </td>
-                                <!-- Modal -->
-                                <div class="modal fade" id="edituser1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <!-- EDIT USER-->
+                                <div class="modal fade" id="edituser2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header d-flex justify-content-center align-itens-center container">
-                                                <h1 class="modal-title" id="exampleModalCenterTitle">ALTERAR DADOS DO USUÁRIO</h1>
+                                                <h1 class="modal-title" id="exampleModalCenterTitle">Editar Usuário</h1>
                                             </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="form-row">
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputSetor">Nome</label>
-                                                            <input type="text" class="form-control" id="inputNovoUsuario" disabled>
-                                                        </div>
+                                            
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputSetor">Nome</label>
+                                                    <input type="text" class="form-control" id="inputNovoUsuario" placeholder="Nome do usuário" required="">
+                                                </div>
 
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Setor</label>
-                                                            <select class="form-control">
-                                                                <option>Escolher</option>
-                                                                <option>Setor 1</option>
-                                                                <option>Setor 2</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Contato</label>
-                                                            <input type="text" class="form-control" id="inputSetorUsuario" placeholder="(00) 9 8765 4321" required="">
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="exampleFormControlInput1">Email</label>
-                                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@example.com">
-                                                        </div>
-                                                    </div>
-                                                </form>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPrioridade">Setor</label>
+                                                    <select class="form-control">
+                                                        <option>Escolher</option>
+                                                        <option>Setor 1</option>
+                                                        <option>Setor 2</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPrioridade">Contato</label>
+                                                    <input type="text" class="form-control" id="inputSetorUsuario" placeholder="(00) 9 8765 4321" required="">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="exampleFormControlInput1">Email</label>
+                                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@example.com">
+                                                </div>
                                             </div>
+                                        </form>
+                                    </div>
                                             <div class="modal-footer">
                                                 <button type="reset" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                                                 <button type="submit" class="btn btn-success">Alterar</button>
@@ -239,8 +267,31 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /Modal -->
+                                <!-- /EDIT USER -->
+                                <!-- DISABLE USER-->
+                                <div class="modal fade" id="disableuser2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header d-flex justify-content-center align-itens-center container">
+                                                <h2 class="modal-title" id="exampleModalCenterTitle">Você tem certeza que quer desativar este usuário?</h2>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form id="disablesetor">
+                                                    <div class="modal-content text-center">
+                                                        <button type="reset" class="btn btn-success" data-dismiss="modal">Cancelar</button>
+                                                        <br>
+                                                        <button type="submit" class="btn btn-danger">Desativar</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /DESABLE USER -->
                             </tr>
+                            <!-- /USER #2 -->
+                            <!-- USER #3 -->
                             <tr>
                                 <td>003</td>
                                 <td>João da Silva</td>
@@ -248,48 +299,50 @@
                                 <td>joao@gmail.com</td>
                                 <td>Administração</td>
                                 <td class="text-right">
-                                    <a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#edituser1">
+                                    <button type="button" data-toggle="modal" data-target="#edituser3" class="btn btn-sm btn-info">
                                         <span class="fa fa-edit"></span>
-                                    </a>
+                                    </button>
 
-                                    <a href="#" class="btn btn-sm btn-danger">
+                                    <button type="button" data-toggle="modal" data-target="#disableuser3" class="btn btn-sm btn-danger">
                                         <span class="fa fa-trash-alt"></span>
-                                    </a>
+                                    </button>
+                                    
                                 </td>
-                                <!-- Modal -->
-                                <div class="modal fade" id="edituser1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <!-- EDIT USER-->
+                                <div class="modal fade" id="edituser3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header d-flex justify-content-center align-itens-center container">
-                                                <h1 class="modal-title" id="exampleModalCenterTitle">ALTERAR DADOS DO USUÁRIO</h1>
+                                                <h1 class="modal-title" id="exampleModalCenterTitle">Editar Usuário</h1>
                                             </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="form-row">
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputSetor">Nome</label>
-                                                            <input type="text" class="form-control" id="inputNovoUsuario" disabled>
-                                                        </div>
+                                            
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputSetor">Nome</label>
+                                                    <input type="text" class="form-control" id="inputNovoUsuario" placeholder="Nome do usuário" required="">
+                                                </div>
 
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Setor</label>
-                                                            <select class="form-control">
-                                                                <option>Escolher</option>
-                                                                <option>Setor 1</option>
-                                                                <option>Setor 2</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Contato</label>
-                                                            <input type="text" class="form-control" id="inputSetorUsuario" placeholder="(00) 9 8765 4321" required="">
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="exampleFormControlInput1">Email</label>
-                                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@example.com">
-                                                        </div>
-                                                    </div>
-                                                </form>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPrioridade">Setor</label>
+                                                    <select class="form-control">
+                                                        <option>Escolher</option>
+                                                        <option>Setor 1</option>
+                                                        <option>Setor 2</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPrioridade">Contato</label>
+                                                    <input type="text" class="form-control" id="inputSetorUsuario" placeholder="(00) 9 8765 4321" required="">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="exampleFormControlInput1">Email</label>
+                                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@example.com">
+                                                </div>
                                             </div>
+                                        </form>
+                                    </div>
                                             <div class="modal-footer">
                                                 <button type="reset" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                                                 <button type="submit" class="btn btn-success">Alterar</button>
@@ -297,57 +350,82 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /Modal -->
+                                <!-- /EDIT USER -->
+                                <!-- DISABLE USER-->
+                                <div class="modal fade" id="disableuser3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header d-flex justify-content-center align-itens-center container">
+                                                <h2 class="modal-title" id="exampleModalCenterTitle">Você tem certeza que quer desativar este usuário?</h2>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form id="disablesetor">
+                                                    <div class="modal-content text-center">
+                                                        <button type="reset" class="btn btn-success" data-dismiss="modal">Cancelar</button>
+                                                        <br>
+                                                        <button type="submit" class="btn btn-danger">Desativar</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /DESABLE USER -->
                             </tr>
+                            <!-- /USER #3 -->
+                            <!-- USER #4 -->
                             <tr>
-                                <td>004</td>
+                                <td>001</td>
                                 <td>João da Silva</td>
                                 <td>(48) 9 9832-3549</td>
                                 <td>joao@gmail.com</td>
                                 <td>Administração</td>
                                 <td class="text-right">
-                                    <a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#edituser1">
+                                    <button type="button" data-toggle="modal" data-target="#edituser4" class="btn btn-sm btn-info">
                                         <span class="fa fa-edit"></span>
-                                    </a>
+                                    </button>
 
-                                    <a href="#" class="btn btn-sm btn-danger">
+                                    <button type="button" data-toggle="modal" data-target="#disableuser4" class="btn btn-sm btn-danger">
                                         <span class="fa fa-trash-alt"></span>
-                                    </a>
+                                    </button>
+                                    
                                 </td>
-                                <!-- Modal -->
-                                <div class="modal fade" id="edituser1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <!-- EDIT USER-->
+                                <div class="modal fade" id="edituser4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header d-flex justify-content-center align-itens-center container">
-                                                <h1 class="modal-title" id="exampleModalCenterTitle">ALTERAR DADOS DO USUÁRIO</h1>
+                                                <h1 class="modal-title" id="exampleModalCenterTitle">Editar Usuário</h1>
                                             </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="form-row">
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputSetor">Nome</label>
-                                                            <input type="text" class="form-control" id="inputNovoUsuario" disabled>
-                                                        </div>
+                                            
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputSetor">Nome</label>
+                                                    <input type="text" class="form-control" id="inputNovoUsuario" placeholder="Nome do usuário" required="">
+                                                </div>
 
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Setor</label>
-                                                            <select class="form-control">
-                                                                <option>Escolher</option>
-                                                                <option>Setor 1</option>
-                                                                <option>Setor 2</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Contato</label>
-                                                            <input type="text" class="form-control" id="inputSetorUsuario" placeholder="(00) 9 8765 4321" required="">
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="exampleFormControlInput1">Email</label>
-                                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@example.com">
-                                                        </div>
-                                                    </div>
-                                                </form>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPrioridade">Setor</label>
+                                                    <select class="form-control">
+                                                        <option>Escolher</option>
+                                                        <option>Setor 1</option>
+                                                        <option>Setor 2</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPrioridade">Contato</label>
+                                                    <input type="text" class="form-control" id="inputSetorUsuario" placeholder="(00) 9 8765 4321" required="">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="exampleFormControlInput1">Email</label>
+                                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@example.com">
+                                                </div>
                                             </div>
+                                        </form>
+                                    </div>
                                             <div class="modal-footer">
                                                 <button type="reset" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                                                 <button type="submit" class="btn btn-success">Alterar</button>
@@ -355,57 +433,82 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /Modal -->
+                                <!-- /EDIT USER -->
+                                <!-- DISABLE USER-->
+                                <div class="modal fade" id="disableuser4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header d-flex justify-content-center align-itens-center container">
+                                                <h2 class="modal-title" id="exampleModalCenterTitle">Você tem certeza que quer desativar este usuário?</h2>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form id="disablesetor">
+                                                    <div class="modal-content text-center">
+                                                        <button type="reset" class="btn btn-success" data-dismiss="modal">Cancelar</button>
+                                                        <br>
+                                                        <button type="submit" class="btn btn-danger">Desativar</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /DESABLE USER -->
                             </tr>
+                            <!-- /USER #4 -->
+                            <!-- USER #5 -->
                             <tr>
-                                <td>005</td>
+                                <td>001</td>
                                 <td>João da Silva</td>
                                 <td>(48) 9 9832-3549</td>
                                 <td>joao@gmail.com</td>
                                 <td>Administração</td>
                                 <td class="text-right">
-                                    <a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#edituser1">
+                                    <button type="button" data-toggle="modal" data-target="#edituser5" class="btn btn-sm btn-info">
                                         <span class="fa fa-edit"></span>
-                                    </a>
+                                    </button>
 
-                                    <a href="#" class="btn btn-sm btn-danger">
+                                    <button type="button" data-toggle="modal" data-target="#disableuser5" class="btn btn-sm btn-danger">
                                         <span class="fa fa-trash-alt"></span>
-                                    </a>
+                                    </button>
+                                    
                                 </td>
-                                <!-- Modal -->
-                                <div class="modal fade" id="edituser1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <!-- EDIT USER-->
+                                <div class="modal fade" id="edituser5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header d-flex justify-content-center align-itens-center container">
-                                                <h1 class="modal-title" id="exampleModalCenterTitle">ALTERAR DADOS DO USUÁRIO</h1>
+                                                <h1 class="modal-title" id="exampleModalCenterTitle">Editar Usuário</h1>
                                             </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="form-row">
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputSetor">Nome</label>
-                                                            <input type="text" class="form-control" id="inputNovoUsuario" disabled>
-                                                        </div>
+                                            
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputSetor">Nome</label>
+                                                    <input type="text" class="form-control" id="inputNovoUsuario" placeholder="Nome do usuário" required="">
+                                                </div>
 
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Setor</label>
-                                                            <select class="form-control">
-                                                                <option>Escolher</option>
-                                                                <option>Setor 1</option>
-                                                                <option>Setor 2</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Contato</label>
-                                                            <input type="text" class="form-control" id="inputSetorUsuario" placeholder="(00) 9 8765 4321" required="">
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="exampleFormControlInput1">Email</label>
-                                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@example.com">
-                                                        </div>
-                                                    </div>
-                                                </form>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPrioridade">Setor</label>
+                                                    <select class="form-control">
+                                                        <option>Escolher</option>
+                                                        <option>Setor 1</option>
+                                                        <option>Setor 2</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPrioridade">Contato</label>
+                                                    <input type="text" class="form-control" id="inputSetorUsuario" placeholder="(00) 9 8765 4321" required="">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="exampleFormControlInput1">Email</label>
+                                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@example.com">
+                                                </div>
                                             </div>
+                                        </form>
+                                    </div>
                                             <div class="modal-footer">
                                                 <button type="reset" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                                                 <button type="submit" class="btn btn-success">Alterar</button>
@@ -413,299 +516,30 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /Modal -->
-
-                            </tr>
-                            <tr>
-                                <td>006</td>
-                                <td>João da Silva</td>
-                                <td>(48) 9 9832-3549</td>
-                                <td>joao@gmail.com</td>
-                                <td>Administração</td>
-                                <td class="text-right">
-                                    <a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#edituser1">
-                                        <span class="fa fa-edit"></span>
-                                    </a>
-
-                                    <a href="#" class="btn btn-sm btn-danger">
-                                        <span class="fa fa-trash-alt"></span>
-                                    </a>
-                                </td>
-                                <!-- Modal -->
-                                <div class="modal fade" id="edituser1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <!-- /EDIT USER -->
+                                <!-- DISABLE USER-->
+                                <div class="modal fade" id="disableuser5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header d-flex justify-content-center align-itens-center container">
-                                                <h1 class="modal-title" id="exampleModalCenterTitle">ALTERAR DADOS DO USUÁRIO</h1>
+                                                <h2 class="modal-title" id="exampleModalCenterTitle">Você tem certeza que quer desativar este usuário?</h2>
                                             </div>
                                             <div class="modal-body">
-                                                <form>
-                                                    <div class="form-row">
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputSetor">Nome</label>
-                                                            <input type="text" class="form-control" id="inputNovoUsuario" disabled>
-                                                        </div>
-
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Setor</label>
-                                                            <select class="form-control">
-                                                                <option>Escolher</option>
-                                                                <option>Setor 1</option>
-                                                                <option>Setor 2</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Contato</label>
-                                                            <input type="text" class="form-control" id="inputSetorUsuario" placeholder="(00) 9 8765 4321" required="">
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="exampleFormControlInput1">Email</label>
-                                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@example.com">
-                                                        </div>
+                                                <form id="disablesetor">
+                                                    <div class="modal-content text-center">
+                                                        <button type="reset" class="btn btn-success" data-dismiss="modal">Cancelar</button>
+                                                        <br>
+                                                        <button type="submit" class="btn btn-danger">Desativar</button>
                                                     </div>
                                                 </form>
                                             </div>
-                                            <div class="modal-footer">
-                                                <button type="reset" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                                                <button type="submit" class="btn btn-success">Alterar</button>
-                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /Modal -->
+                                <!-- /DESABLE USER -->
                             </tr>
-                            <tr>
-                                <td>007</td>
-                                <td>João da Silva</td>
-                                <td>(48) 9 9832-3549</td>
-                                <td>joao@gmail.com</td>
-                                <td>Administração</td>
-                                <td class="text-right">
-                                    <a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#edituser1">
-                                        <span class="fa fa-edit"></span>
-                                    </a>
-
-                                    <a href="#" class="btn btn-sm btn-danger">
-                                        <span class="fa fa-trash-alt"></span>
-                                    </a>
-                                </td>
-                                <!-- Modal -->
-                                <div class="modal fade" id="edituser1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header d-flex justify-content-center align-itens-center container">
-                                                <h1 class="modal-title" id="exampleModalCenterTitle">ALTERAR DADOS DO USUÁRIO</h1>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="form-row">
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputSetor">Nome</label>
-                                                            <input type="text" class="form-control" id="inputNovoUsuario" disabled>
-                                                        </div>
-
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Setor</label>
-                                                            <select class="form-control">
-                                                                <option>Escolher</option>
-                                                                <option>Setor 1</option>
-                                                                <option>Setor 2</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Contato</label>
-                                                            <input type="text" class="form-control" id="inputSetorUsuario" placeholder="(00) 9 8765 4321" required="">
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="exampleFormControlInput1">Email</label>
-                                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@example.com">
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="reset" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                                                <button type="submit" class="btn btn-success">Alterar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /Modal -->
-                            </tr>
-                            <tr>
-                                <td>008</td>
-                                <td>João da Silva</td>
-                                <td>(48) 9 9832-3549</td>
-                                <td>joao@gmail.com</td>
-                                <td>Administração</td>
-                                <td class="text-right">
-                                    <a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#edituser1">
-                                        <span class="fa fa-edit"></span>
-                                    </a>
-
-                                    <a href="#" class="btn btn-sm btn-danger">
-                                        <span class="fa fa-trash-alt"></span>
-                                    </a>
-                                </td>
-                                <!-- Modal -->
-                                <div class="modal fade" id="edituser1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header d-flex justify-content-center align-itens-center container">
-                                                <h1 class="modal-title" id="exampleModalCenterTitle">ALTERAR DADOS DO USUÁRIO</h1>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="form-row">
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputSetor">Nome</label>
-                                                            <input type="text" class="form-control" id="inputNovoUsuario" disabled>
-                                                        </div>
-
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Setor</label>
-                                                            <select class="form-control">
-                                                                <option>Escolher</option>
-                                                                <option>Setor 1</option>
-                                                                <option>Setor 2</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Contato</label>
-                                                            <input type="text" class="form-control" id="inputSetorUsuario" placeholder="(00) 9 8765 4321" required="">
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="exampleFormControlInput1">Email</label>
-                                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@example.com">
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="reset" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                                                <button type="submit" class="btn btn-success">Alterar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /Modal -->
-                            </tr>
-                            <tr>
-                                <td>009</td>
-                                <td>João da Silva</td>
-                                <td>(48) 9 9832-3549</td>
-                                <td>joao@gmail.com</td>
-                                <td>Administração</td>
-                                <td class="text-right">
-                                    <a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#edituser1">
-                                        <span class="fa fa-edit"></span>
-                                    </a>
-
-                                    <a href="#" class="btn btn-sm btn-danger">
-                                        <span class="fa fa-trash-alt"></span>
-                                    </a>
-                                </td>
-                                <!-- Modal -->
-                                <div class="modal fade" id="edituser1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header d-flex justify-content-center align-itens-center container">
-                                                <h1 class="modal-title" id="exampleModalCenterTitle">ALTERAR DADOS DO USUÁRIO</h1>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="form-row">
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputSetor">Nome</label>
-                                                            <input type="text" class="form-control" id="inputNovoUsuario" disabled>
-                                                        </div>
-
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Setor</label>
-                                                            <select class="form-control">
-                                                                <option>Escolher</option>
-                                                                <option>Setor 1</option>
-                                                                <option>Setor 2</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Contato</label>
-                                                            <input type="text" class="form-control" id="inputSetorUsuario" placeholder="(00) 9 8765 4321" required="">
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="exampleFormControlInput1">Email</label>
-                                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@example.com">
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="reset" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                                                <button type="submit" class="btn btn-success">Alterar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /Modal -->
-                            </tr>
-                            <tr>
-                                <td>010</td>
-                                <td>João da Silva</td>
-                                <td>(48) 9 9832-3549</td>
-                                <td>joao@gmail.com</td>
-                                <td>Administração</td>
-                                <td class="text-right">
-                                    <a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#edituser1">
-                                        <span class="fa fa-edit"></span>
-                                    </a>
-
-                                    <a href="#" class="btn btn-sm btn-danger">
-                                        <span class="fa fa-trash-alt"></span>
-                                    </a>
-                                </td>
-                                <!-- Modal -->
-                                <div class="modal fade" id="edituser1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header d-flex justify-content-center align-itens-center container">
-                                                <h1 class="modal-title" id="exampleModalCenterTitle">ALTERAR DADOS DO USUÁRIO</h1>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="form-row">
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputSetor">Nome</label>
-                                                            <input type="text" class="form-control" id="inputNovoUsuario" disabled>
-                                                        </div>
-
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Setor</label>
-                                                            <select class="form-control">
-                                                                <option>Escolher</option>
-                                                                <option>Setor 1</option>
-                                                                <option>Setor 2</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPrioridade">Contato</label>
-                                                            <input type="text" class="form-control" id="inputSetorUsuario" placeholder="(00) 9 8765 4321" required="">
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="exampleFormControlInput1">Email</label>
-                                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@example.com">
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="reset" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                                                <button type="submit" class="btn btn-success">Alterar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /Modal -->
-                            </tr>
+                            <!-- /USER #5 -->
                         </tbody>
                     </table>
                 </div>

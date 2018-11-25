@@ -1,45 +1,48 @@
 :root {
-  --jumbotron-padding-y: 3rem;
+    --jumbotron-padding-y: 3rem;
 }
 
 .jumbotron {
-  padding-top: var(--jumbotron-padding-y);
-  padding-bottom: var(--jumbotron-padding-y);
-  margin-bottom: 0;
-  background-color: whitesmoke;
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: whitesmoke;
+    color: black;
+    
 }
+
 @media (min-width: 768px) {
-  .jumbotron {
-    padding-top: calc(var(--jumbotron-padding-y) * 1);
-    padding-bottom: calc(var(--jumbotron-padding-y) * 1);
-  }
+    .jumbotron {
+        padding-top: calc(var(--jumbotron-padding-y) * 1);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 1);
+    }
 }
 
 .jumbotron p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .jumbotron-heading {
-  font-weight: 300;
+    font-weight: 300;
 }
 
 .jumbotron .container {
-  max-width: 40rem;
+    max-width: 60rem;
 }
 
 footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 footer p {
-  margin-bottom: .3rem;
+    margin-bottom: .3rem;
 }
 
 /*#################### CSS BY Kaue - JoJo */
-#rodape{
-	position: fixed;
-	bottom: 0;
-	right: 1%;
-	text-align: right;
+#rodape {
+    position: relative;
+    bottom: 0;
+    right: 1%;
+    text-align: right;
 }

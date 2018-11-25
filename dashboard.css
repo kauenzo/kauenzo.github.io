@@ -102,7 +102,7 @@ body {
 
 /*#################### CSS BY Kaue - JoJo */
 #rodape{
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	right: 1%;
 	text-align: right;

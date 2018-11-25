@@ -2,35 +2,37 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/img/logo-bj.png">
 
-	<!-- ####################### FONT AWESOME ####################### -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<!-- ####################### //FONT AWESOME ####################### -->
+    <!-- ####################### FONT AWESOME ####################### -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- ####################### //FONT AWESOME ####################### -->
 
-	<title>Manutenções Finalizados</title>
+    <title>Manutenções Finalizados</title>
 
-	<!-- Bootstrap core CSS -->
-	<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-	<!-- Custom styles for this template -->
-	<link href="dashboard.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
 </head>
 
 <body>
-	<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-		<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="home.html">Manutenção</a>
-		<!-- ##### CAIXA DE PESQUISA ##### 
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Manutenção</a>
+        <!-- ##### CAIXA DE PESQUISA ##### 
 		<input class="form-control form-control-dark w-100" type="text" placeholder="Pesquisar" aria-label="Search">
 		<ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
           <a class="nav-link" href="#">Sair</a>
         </li>
-      </ul> -->
+      </ul>
+        <!-- ##### CAIXA DE PESQUISA ##### -->
+         <!-- #### Página admin #### 
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
                 <a class="nav-link" href="admin.html">
@@ -39,33 +41,34 @@
                 </a>
             </li>
         </ul>
-	</nav>
+        <!-- #### /Página admin #### -->
+    </nav>
 
-	<div class="container-fluid">
-		<div class="row">
-			<nav class="col-md-2 d-none d-md-block bg-light sidebar">
-				<div class="sidebar-sticky">
-					<ul class="nav flex-column">
-						<li class="nav-item">
-							<a class="nav-link" href="p-aberto.html">
-								<span class="fa fa-square"></span>
-								Manutenções em aberto <span class="sr-only">(current)</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="p-andamento.html">
-								<span class="fa fa-minus-square"></span>
-								Manutenções em andamento
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" href="p-finalizado.html">
-								<span class="fa fa-check-square"></span>
-								Manutenções finalizados
-							</a>
-						</li>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="p-aberto.html">
+                                <span class="fa fa-square"></span>
+                                Manutenções em aberto <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="p-andamento.html">
+                                <span class="fa fa-minus-square"></span>
+                                Manutenções em andamento
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="p-finalizado.html">
+                                <span class="fa fa-check-square"></span>
+                                Manutenções finalizados
+                            </a>
+                        </li>
 
-						<!--
+                        <!--
               <li class="nav-item">
                 <a class="nav-link" href="clientes.html">
                   <span data-feather="users"></span>
@@ -73,930 +76,947 @@
                 </a>
               </li>
 			-->
-					</ul>
-				</div>
-                
-			</nav>
+                    </ul>
+                </div>
 
-			<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-				<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-0">
-					<h1 class="h2">Manutenções Finalizadas</h1>
-					<div class="btn-toolbar mb-2 mb-md-0">
-						<!-- ******** -->
-						<!-- Button trigger modal -->
-						<button type="button" class="btn btn-sm btn-outline-success" data-toggle="modal" data-target="#exampleModalCenter">
-							<span class="fa fa-share-square"></span>
-							Solicitar Manutenção
-						</button>
+            </nav>
 
-						<!-- Modal -->
-						<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-							<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header d-flex justify-content-center align-itens-center container">
-										<h1 class="modal-title" id="exampleModalCenterTitle">Nova Manutenção</h1>
-										<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-0">
+                    <h1 class="h2">Manutenções Finalizadas</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <!-- ******** -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-sm btn-outline-success" data-toggle="modal" data-target="#exampleModalCenter">
+                            <span class="fa fa-share-square"></span>
+                            Solicitar Manutenção
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header d-flex justify-content-center align-itens-center container">
+                                        <h1 class="modal-title" id="exampleModalCenterTitle">Nova Manutenção</h1>
+                                        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>-->
-									</div>
-									<div class="modal-body">
-										<form>
-											<div class="form-row">
-												<div class="form-group col-md-6">
-													<label for="inputSetor">Setor</label>
-													<select id="inputSetor" class="form-control">
-														<option selected>Escolher...</option>
-														<option value="EL">Elétrica</option>
-														<option value="MG">Mecânica Gereal</option>
-														<option value="TI">Informática</option>
-													</select>
-												</div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputSetor">Setor</label>
+                                                    <select id="inputSetor" class="form-control">
+                                                        <option selected>Escolher...</option>
+                                                        <option value="EL">Elétrica</option>
+                                                        <option value="MG">Mecânica Gereal</option>
+                                                        <option value="TI">Informática</option>
+                                                    </select>
+                                                </div>
 
-												<div class="form-group col-md-6">
-													<label for="inputPrioridade">Prioridade</label>
-													<select id="inputPrioridade" class="form-control">
-														<option selected>Escolher...</option>
-														<option value="ALTA">Alta</option>
-														<option value="MEDIA">Média</option>
-														<option value="BAIXA">Baixa</option>
-													</select>
-												</div>
-											</div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPrioridade">Prioridade</label>
+                                                    <select id="inputPrioridade" class="form-control">
+                                                        <option selected>Escolher...</option>
+                                                        <option value="ALTA">Alta</option>
+                                                        <option value="MEDIA">Média</option>
+                                                        <option value="BAIXA">Baixa</option>
+                                                    </select>
+                                                </div>
+                                            </div>
 
-											<div class="form-row">
-												<div class="form-group col-md-12">
-													<label for="inputServico">Serviço</label>
-													<input type="text" class="form-control" id="inputServico" placeholder="Serviço a ser realizado" required="">
-												</div>
-											</div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12">
+                                                    <label for="inputServico">Serviço</label>
+                                                    <input type="text" class="form-control" id="inputServico" placeholder="Serviço a ser realizado" required="">
+                                                </div>
+                                            </div>
 
-											<div class="form-row">
-												<div class="form-group col-md-5">
-													<label for="inputSolicitante">Solicitante</label>
-													<input type="text" class="form-control" id="inputSolicitante" placeholder="Solicitante do serviço" required="">
-												</div>
-												<div class="form-group col-md-4">
-													<label for="inputSetor">Setor</label>
-													<input type="text" class="form-control" id="inputSetor" placeholder="Setor do solicitante do serviço" required="">
-												</div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-5">
+                                                    <label for="inputSolicitante">Solicitante</label>
+                                                    <input type="text" class="form-control" id="inputSolicitante" placeholder="Solicitante do serviço" required="">
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputSetor">Setor</label>
+                                                    <input type="text" class="form-control" id="inputSetor" placeholder="Setor do solicitante do serviço" required="">
+                                                </div>
 
-												<div class="form-group col-md-3">
-													<label for="inputHorario">Horário do Pedido</label>
-													<input type="text" class="form-control" id="inputHorario" disabled>
-												</div>
-											</div>
+                                                <div class="form-group col-md-3">
+                                                    <label for="inputHorario">Horário do Pedido</label>
+                                                    <input type="text" class="form-control" id="inputHorario" disabled>
+                                                </div>
+                                            </div>
 
-											<div class="form-group">
-												<label for="Descricao">Descrição</label>
-												<textarea class="form-control" id="Descricao" rows="4" placeholder="Descrição"></textarea>
-											</div>
-										</form>
-									</div>
-									<div class="modal-footer">
-										<button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="table-responsive">
-					<table class="table table-striped table-sm">
-						<thead>
-							<tr>
-								<th>#</th>
-								<th>Setor Responsável</th>
-								<th>Serviço</th>
-								<th>Término</th>
-								<th>Encarregados</th>
-								<th></th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>001</td>
-								<td>Elétrica</td>
-								<td>Troca de lâmpada</td>
-								<td></td>
-								<td></td>
-								<td class="text-right">
-									<button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar001">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
-								</td>
-								<td>
-									<!-- Modal -->
-									<div class="modal fade" id="iniciar001" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-										<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-											<div class="modal-content">
-												<div class="modal-header d-flex justify-content-center align-itens-center container">
-													<h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
-													<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <div class="form-group">
+                                                <label for="Descricao">Descrição</label>
+                                                <textarea class="form-control" id="Descricao" rows="4" placeholder="Descrição"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Setor Responsável</th>
+                                <th>Serviço</th>
+                                <th>Término</th>
+                                <th>Encarregados</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>Informática</td>
+                                <td>Internet Instável</td>
+                                <td>20/11/2018</td>
+                                <td>Jõao, José</td>
+                                <td class="text-right">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar001">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
+                                </td>
+                                <td>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="iniciar001" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center align-itens-center container">
+                                                    <h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
+                                                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>-->
-												</div>
-												<div class="modal-body">
-													<form>
-														<div class="form-row">
-															<div class="form-group col-md-6">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-6">
-																<label for="inputPrioridade">Prioridade</label>
-																<input type="text" class="form-control" id="inputPrioridade" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputPrioridade">Prioridade</label>
+                                                                <input type="text" class="form-control" id="inputPrioridade" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-12">
-																<label for="inputServico">Serviço</label>
-																<input type="text" class="form-control" id="inputServico" disabled>
-															</div>
-														</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="inputServico">Serviço</label>
+                                                                <input type="text" class="form-control" id="inputServico" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-5">
-																<label for="inputSolicitante">Solicitante</label>
-																<input type="text" class="form-control" id="inputSolicitante" disabled>
-															</div>
-															<div class="form-group col-md-4">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-5">
+                                                                <label for="inputSolicitante">Solicitante</label>
+                                                                <input type="text" class="form-control" id="inputSolicitante" disabled>
+                                                            </div>
+                                                            <div class="form-group col-md-4">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-3">
-																<label for="inputHorario">Horário do Pedido</label>
-																<input type="text" class="form-control" id="inputHorario" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-3">
+                                                                <label for="inputHorario">Horário do Pedido</label>
+                                                                <input type="text" class="form-control" id="inputHorario" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
-														</div>
-														<hr>
-														<h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
-														<div class="form-group">
-															<label for="inputSetor">Encarregados</label>
-															<input type="text" class="form-control" id="inputSetor" placeholder="Quem foi realizar o serviço" required="">
-														</div>
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" placeholder="Descrição"></textarea>
-														</div>
-													</form>
-												</div>
-												<div class="modal-footer">
-													<button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- /Modal -->
-								</td>
-							</tr>
-							<tr>
-								<td>002</td>
-								<td>Mêcanica Geral</td>
-								<td>Arrumar Cadeiras</td>
-								<td>20/11/2018</td>
-								<td></td>
-								<td class="text-right">
-									<button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar002">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
-								</td>
-								<td>
-									<!-- Modal -->
-									<div class="modal fade" id="iniciar002" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-										<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-											<div class="modal-content">
-												<div class="modal-header d-flex justify-content-center align-itens-center container">
-													<h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
-													<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                        <hr>
+                                                        <h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
+                                                        <div class="form-group">
+                                                            <label for="inputSetor">Encarregados</label>
+                                                            <input type="text" class="form-control" id="inputSetor" disabled>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>Informática</td>
+                                <td>Internet Instável</td>
+                                <td>20/11/2018</td>
+                                <td>Jõao, José</td>
+                                <td class="text-right">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar002">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
+                                </td>
+                                <td>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="iniciar002" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center align-itens-center container">
+                                                    <h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
+
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputPrioridade">Prioridade</label>
+                                                                <input type="text" class="form-control" id="inputPrioridade" disabled>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="inputServico">Serviço</label>
+                                                                <input type="text" class="form-control" id="inputServico" disabled>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-5">
+                                                                <label for="inputSolicitante">Solicitante</label>
+                                                                <input type="text" class="form-control" id="inputSolicitante" disabled>
+                                                            </div>
+                                                            <div class="form-group col-md-4">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
+
+                                                            <div class="form-group col-md-3">
+                                                                <label for="inputHorario">Horário do Pedido</label>
+                                                                <input type="text" class="form-control" id="inputHorario" disabled>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                        <h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
+                                                        <div class="form-group">
+                                                            <label for="inputSetor">Encarregados</label>
+                                                            <input type="text" class="form-control" id="inputSetor" disabled>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- /Modal -->
+                            </tr>
+                            <tr>
+                                <td>003</td>
+                                <td>Informática</td>
+                                <td>Internet Instável</td>
+                                <td>20/11/2018</td>
+                                <td>Jõao, José</td>
+                                <td class="text-right">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar003">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
+                                </td>
+                                <td>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="iniciar003" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center align-itens-center container">
+                                                    <h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
+                                                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>-->
-												</div>
-												<div class="modal-body">
-													<form>
-														<div class="form-row">
-															<div class="form-group col-md-6">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-6">
-																<label for="inputPrioridade">Prioridade</label>
-																<input type="text" class="form-control" id="inputPrioridade" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputPrioridade">Prioridade</label>
+                                                                <input type="text" class="form-control" id="inputPrioridade" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-12">
-																<label for="inputServico">Serviço</label>
-																<input type="text" class="form-control" id="inputServico" disabled>
-															</div>
-														</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="inputServico">Serviço</label>
+                                                                <input type="text" class="form-control" id="inputServico" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-5">
-																<label for="inputSolicitante">Solicitante</label>
-																<input type="text" class="form-control" id="inputSolicitante" disabled>
-															</div>
-															<div class="form-group col-md-4">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-5">
+                                                                <label for="inputSolicitante">Solicitante</label>
+                                                                <input type="text" class="form-control" id="inputSolicitante" disabled>
+                                                            </div>
+                                                            <div class="form-group col-md-4">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-3">
-																<label for="inputHorario">Horário do Pedido</label>
-																<input type="text" class="form-control" id="inputHorario" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-3">
+                                                                <label for="inputHorario">Horário do Pedido</label>
+                                                                <input type="text" class="form-control" id="inputHorario" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
-														</div>
-													</form>
-												</div>
-												<div class="modal-footer">
-													<button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- /Modal -->
-							</tr>
-							<tr>
-								<td>003</td>
-								<td>Elétrica</td>
-								<td>Encapar fio</td>
-								<td>24/11/2018</td>
-								<td>Bruno e Felix</td>
-								<td class="text-right">
-									<button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar003">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
-								</td>
-								<td>
-									<!-- Modal -->
-									<div class="modal fade" id="iniciar003" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-										<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-											<div class="modal-content">
-												<div class="modal-header d-flex justify-content-center align-itens-center container">
-													<h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
-													<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                        <hr>
+                                                        <h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
+                                                        <div class="form-group">
+                                                            <label for="inputSetor">Encarregados</label>
+                                                            <input type="text" class="form-control" id="inputSetor" disabled>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                            </tr>
+                            <tr>
+                                <td>004</td>
+                                <td>Informática</td>
+                                <td>Internet Instável</td>
+                                <td>20/11/2018</td>
+                                <td>Jõao, José</td>
+                                <td class="text-right">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar004">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
+                                </td>
+                                <td>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="iniciar004" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center align-itens-center container">
+                                                    <h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
+                                                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>-->
-												</div>
-												<div class="modal-body">
-													<form>
-														<div class="form-row">
-															<div class="form-group col-md-6">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-6">
-																<label for="inputPrioridade">Prioridade</label>
-																<input type="text" class="form-control" id="inputPrioridade" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputPrioridade">Prioridade</label>
+                                                                <input type="text" class="form-control" id="inputPrioridade" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-12">
-																<label for="inputServico">Serviço</label>
-																<input type="text" class="form-control" id="inputServico" disabled>
-															</div>
-														</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="inputServico">Serviço</label>
+                                                                <input type="text" class="form-control" id="inputServico" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-5">
-																<label for="inputSolicitante">Solicitante</label>
-																<input type="text" class="form-control" id="inputSolicitante" disabled>
-															</div>
-															<div class="form-group col-md-4">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-5">
+                                                                <label for="inputSolicitante">Solicitante</label>
+                                                                <input type="text" class="form-control" id="inputSolicitante" disabled>
+                                                            </div>
+                                                            <div class="form-group col-md-4">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-3">
-																<label for="inputHorario">Horário do Pedido</label>
-																<input type="text" class="form-control" id="inputHorario" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-3">
+                                                                <label for="inputHorario">Horário do Pedido</label>
+                                                                <input type="text" class="form-control" id="inputHorario" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
-														</div>
-														<hr>
-														<h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
-														<div class="form-group">
-															<label for="inputSetor">Encarregados</label>
-															<input type="text" class="form-control" id="inputSetor" placeholder="Quem foi realizar o serviço" required="">
-														</div>
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" placeholder="Descrição"></textarea>
-														</div>
-													</form>
-												</div>
-												<div class="modal-footer">
-													<button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- /Modal -->
-							</tr>
-							<tr>
-								<td>004</td>
-								<td>libero</td>
-								<td>Sed</td>
-								<td>cursus</td>
-								<td></td>
-								<td class="text-right">
-									<button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar004">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
-								</td>
-								<td>
-									<!-- Modal -->
-									<div class="modal fade" id="iniciar004" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-										<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-											<div class="modal-content">
-												<div class="modal-header d-flex justify-content-center align-itens-center container">
-													<h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
-													<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                        <hr>
+                                                        <h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
+                                                        <div class="form-group">
+                                                            <label for="inputSetor">Encarregados</label>
+                                                            <input type="text" class="form-control" id="inputSetor" disabled>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                            </tr>
+                            <tr>
+                                <td>005</td>
+                                <td>Informática</td>
+                                <td>Internet Instável</td>
+                                <td>20/11/2018</td>
+                                <td>Jõao, José</td>
+                                <td class="text-right">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar005">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
+                                </td>
+                                <td>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="iniciar005" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center align-itens-center container">
+                                                    <h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
+                                                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>-->
-												</div>
-												<div class="modal-body">
-													<form>
-														<div class="form-row">
-															<div class="form-group col-md-6">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-6">
-																<label for="inputPrioridade">Prioridade</label>
-																<input type="text" class="form-control" id="inputPrioridade" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputPrioridade">Prioridade</label>
+                                                                <input type="text" class="form-control" id="inputPrioridade" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-12">
-																<label for="inputServico">Serviço</label>
-																<input type="text" class="form-control" id="inputServico" disabled>
-															</div>
-														</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="inputServico">Serviço</label>
+                                                                <input type="text" class="form-control" id="inputServico" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-5">
-																<label for="inputSolicitante">Solicitante</label>
-																<input type="text" class="form-control" id="inputSolicitante" disabled>
-															</div>
-															<div class="form-group col-md-4">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-5">
+                                                                <label for="inputSolicitante">Solicitante</label>
+                                                                <input type="text" class="form-control" id="inputSolicitante" disabled>
+                                                            </div>
+                                                            <div class="form-group col-md-4">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-3">
-																<label for="inputHorario">Horário do Pedido</label>
-																<input type="text" class="form-control" id="inputHorario" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-3">
+                                                                <label for="inputHorario">Horário do Pedido</label>
+                                                                <input type="text" class="form-control" id="inputHorario" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
-														</div>
-														<hr>
-														<h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
-														<div class="form-group">
-															<label for="inputSetor">Encarregados</label>
-															<input type="text" class="form-control" id="inputSetor" placeholder="Quem foi realizar o serviço" required="">
-														</div>
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" placeholder="Descrição"></textarea>
-														</div>
-													</form>
-												</div>
-												<div class="modal-footer">
-													<button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- /Modal -->
-							</tr>
-							<tr>
-								<td>005</td>
-								<td>dapibus</td>
-								<td>diam</td>
-								<td>Sed</td>
-								<td></td>
-								<td class="text-right">
-									<button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar005">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
-								</td>
-								<td>
-									<!-- Modal -->
-									<div class="modal fade" id="iniciar005" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-										<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-											<div class="modal-content">
-												<div class="modal-header d-flex justify-content-center align-itens-center container">
-													<h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
-													<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                        <hr>
+                                                        <h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
+                                                        <div class="form-group">
+                                                            <label for="inputSetor">Encarregados</label>
+                                                            <input type="text" class="form-control" id="inputSetor" disabled>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                            </tr>
+                            <tr>
+                                <td>006</td>
+                                <td>Informática</td>
+                                <td>Internet Instável</td>
+                                <td>20/11/2018</td>
+                                <td>Jõao, José</td>
+                                <td class="text-right">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar006">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
+                                </td>
+                                <td>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="iniciar006" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center align-itens-center container">
+                                                    <h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
+                                                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>-->
-												</div>
-												<div class="modal-body">
-													<form>
-														<div class="form-row">
-															<div class="form-group col-md-6">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-6">
-																<label for="inputPrioridade">Prioridade</label>
-																<input type="text" class="form-control" id="inputPrioridade" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputPrioridade">Prioridade</label>
+                                                                <input type="text" class="form-control" id="inputPrioridade" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-12">
-																<label for="inputServico">Serviço</label>
-																<input type="text" class="form-control" id="inputServico" disabled>
-															</div>
-														</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="inputServico">Serviço</label>
+                                                                <input type="text" class="form-control" id="inputServico" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-5">
-																<label for="inputSolicitante">Solicitante</label>
-																<input type="text" class="form-control" id="inputSolicitante" disabled>
-															</div>
-															<div class="form-group col-md-4">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-5">
+                                                                <label for="inputSolicitante">Solicitante</label>
+                                                                <input type="text" class="form-control" id="inputSolicitante" disabled>
+                                                            </div>
+                                                            <div class="form-group col-md-4">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-3">
-																<label for="inputHorario">Horário do Pedido</label>
-																<input type="text" class="form-control" id="inputHorario" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-3">
+                                                                <label for="inputHorario">Horário do Pedido</label>
+                                                                <input type="text" class="form-control" id="inputHorario" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
-														</div>
-														<hr>
-														<h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
-														<div class="form-group">
-															<label for="inputSetor">Encarregados</label>
-															<input type="text" class="form-control" id="inputSetor" placeholder="Quem foi realizar o serviço" required="">
-														</div>
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" placeholder="Descrição"></textarea>
-														</div>
-													</form>
-												</div>
-												<div class="modal-footer">
-													<button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- /Modal -->
-							</tr>
-							<tr>
-								<td>006</td>
-								<td>Nulla</td>
-								<td>quis</td>
-								<td>sem</td>
-								<td></td>
-								<td class="text-right">
-									<button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar006">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
-								</td>
-								<td>
-									<!-- Modal -->
-									<div class="modal fade" id="iniciar006" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-										<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-											<div class="modal-content">
-												<div class="modal-header d-flex justify-content-center align-itens-center container">
-													<h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
-													<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                        <hr>
+                                                        <h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
+                                                        <div class="form-group">
+                                                            <label for="inputSetor">Encarregados</label>
+                                                            <input type="text" class="form-control" id="inputSetor" disabled>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                            </tr>
+                            <tr>
+                                <td>007</td>
+                                <td>Informática</td>
+                                <td>Internet Instável</td>
+                                <td>20/11/2018</td>
+                                <td>Jõao, José</td>
+                                <td class="text-right">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar007">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
+                                </td>
+                                <td>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="iniciar007" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center align-itens-center container">
+                                                    <h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
+                                                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>-->
-												</div>
-												<div class="modal-body">
-													<form>
-														<div class="form-row">
-															<div class="form-group col-md-6">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-6">
-																<label for="inputPrioridade">Prioridade</label>
-																<input type="text" class="form-control" id="inputPrioridade" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputPrioridade">Prioridade</label>
+                                                                <input type="text" class="form-control" id="inputPrioridade" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-12">
-																<label for="inputServico">Serviço</label>
-																<input type="text" class="form-control" id="inputServico" disabled>
-															</div>
-														</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="inputServico">Serviço</label>
+                                                                <input type="text" class="form-control" id="inputServico" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-5">
-																<label for="inputSolicitante">Solicitante</label>
-																<input type="text" class="form-control" id="inputSolicitante" disabled>
-															</div>
-															<div class="form-group col-md-4">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-5">
+                                                                <label for="inputSolicitante">Solicitante</label>
+                                                                <input type="text" class="form-control" id="inputSolicitante" disabled>
+                                                            </div>
+                                                            <div class="form-group col-md-4">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-3">
-																<label for="inputHorario">Horário do Pedido</label>
-																<input type="text" class="form-control" id="inputHorario" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-3">
+                                                                <label for="inputHorario">Horário do Pedido</label>
+                                                                <input type="text" class="form-control" id="inputHorario" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
-														</div>
-														<hr>
-														<h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
-														<div class="form-group">
-															<label for="inputSetor">Encarregados</label>
-															<input type="text" class="form-control" id="inputSetor" placeholder="Quem foi realizar o serviço" required="">
-														</div>
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" placeholder="Descrição"></textarea>
-														</div>
-													</form>
-												</div>
-												<div class="modal-footer">
-													<button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- /Modal -->
-							</tr>
-							<tr>
-								<td>007</td>
-								<td>nibh</td>
-								<td>elementum</td>
-								<td>imperdiet</td>
-								<td></td>
-								<td class="text-right">
-									<button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar007">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
-								</td>
-								<td>
-									<!-- Modal -->
-									<div class="modal fade" id="iniciar007" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-										<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-											<div class="modal-content">
-												<div class="modal-header d-flex justify-content-center align-itens-center container">
-													<h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
-													<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                        <hr>
+                                                        <h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
+                                                        <div class="form-group">
+                                                            <label for="inputSetor">Encarregados</label>
+                                                            <input type="text" class="form-control" id="inputSetor" disabled>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                            </tr>
+                            <tr>
+                                <td>008</td>
+                                <td>Informática</td>
+                                <td>Internet Instável</td>
+                                <td>20/11/2018</td>
+                                <td>Jõao, José</td>
+                                <td class="text-right">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar008">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
+                                </td>
+                                <td>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="iniciar008" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center align-itens-center container">
+                                                    <h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
+                                                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>-->
-												</div>
-												<div class="modal-body">
-													<form>
-														<div class="form-row">
-															<div class="form-group col-md-6">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-6">
-																<label for="inputPrioridade">Prioridade</label>
-																<input type="text" class="form-control" id="inputPrioridade" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputPrioridade">Prioridade</label>
+                                                                <input type="text" class="form-control" id="inputPrioridade" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-12">
-																<label for="inputServico">Serviço</label>
-																<input type="text" class="form-control" id="inputServico" disabled>
-															</div>
-														</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="inputServico">Serviço</label>
+                                                                <input type="text" class="form-control" id="inputServico" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-5">
-																<label for="inputSolicitante">Solicitante</label>
-																<input type="text" class="form-control" id="inputSolicitante" disabled>
-															</div>
-															<div class="form-group col-md-4">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-5">
+                                                                <label for="inputSolicitante">Solicitante</label>
+                                                                <input type="text" class="form-control" id="inputSolicitante" disabled>
+                                                            </div>
+                                                            <div class="form-group col-md-4">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-3">
-																<label for="inputHorario">Horário do Pedido</label>
-																<input type="text" class="form-control" id="inputHorario" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-3">
+                                                                <label for="inputHorario">Horário do Pedido</label>
+                                                                <input type="text" class="form-control" id="inputHorario" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
-														</div>
-														<hr>
-														<h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
-														<div class="form-group">
-															<label for="inputSetor">Encarregados</label>
-															<input type="text" class="form-control" id="inputSetor" placeholder="Quem foi realizar o serviço" required="">
-														</div>
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" placeholder="Descrição"></textarea>
-														</div>
-													</form>
-												</div>
-												<div class="modal-footer">
-													<button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- /Modal -->
-							</tr>
-							<tr>
-								<td>008</td>
-								<td>sagittis</td>
-								<td>ipsum</td>
-								<td>Praesent</td>
-								<td></td>
-								<td class="text-right">
-									<button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar008">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
-								</td>
-								<td>
-									<!-- Modal -->
-									<div class="modal fade" id="iniciar008" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-										<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-											<div class="modal-content">
-												<div class="modal-header d-flex justify-content-center align-itens-center container">
-													<h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
-													<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                        <hr>
+                                                        <h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
+                                                        <div class="form-group">
+                                                            <label for="inputSetor">Encarregados</label>
+                                                            <input type="text" class="form-control" id="inputSetor" disabled>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                            </tr>
+                            <tr>
+                                <td>009</td>
+                                <td>Informática</td>
+                                <td>Internet Instável</td>
+                                <td>20/11/2018</td>
+                                <td>Jõao, José</td>
+                                <td class="text-right">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar009">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
+                                </td>
+                                <td>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="iniciar009" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center align-itens-center container">
+                                                    <h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
+                                                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>-->
-												</div>
-												<div class="modal-body">
-													<form>
-														<div class="form-row">
-															<div class="form-group col-md-6">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-6">
-																<label for="inputPrioridade">Prioridade</label>
-																<input type="text" class="form-control" id="inputPrioridade" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputPrioridade">Prioridade</label>
+                                                                <input type="text" class="form-control" id="inputPrioridade" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-12">
-																<label for="inputServico">Serviço</label>
-																<input type="text" class="form-control" id="inputServico" disabled>
-															</div>
-														</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="inputServico">Serviço</label>
+                                                                <input type="text" class="form-control" id="inputServico" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-5">
-																<label for="inputSolicitante">Solicitante</label>
-																<input type="text" class="form-control" id="inputSolicitante" disabled>
-															</div>
-															<div class="form-group col-md-4">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-5">
+                                                                <label for="inputSolicitante">Solicitante</label>
+                                                                <input type="text" class="form-control" id="inputSolicitante" disabled>
+                                                            </div>
+                                                            <div class="form-group col-md-4">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-3">
-																<label for="inputHorario">Horário do Pedido</label>
-																<input type="text" class="form-control" id="inputHorario" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-3">
+                                                                <label for="inputHorario">Horário do Pedido</label>
+                                                                <input type="text" class="form-control" id="inputHorario" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
-														</div>
-														<hr>
-														<h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
-														<div class="form-group">
-															<label for="inputSetor">Encarregados</label>
-															<input type="text" class="form-control" id="inputSetor" placeholder="Quem foi realizar o serviço" required="">
-														</div>
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" placeholder="Descrição"></textarea>
-														</div>
-													</form>
-												</div>
-												<div class="modal-footer">
-													<button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- /Modal -->
-							</tr>
-							<tr>
-								<td>009</td>
-								<td>Fusce</td>
-								<td>nec</td>
-								<td>tellus</td>
-								<td></td>
-								<td class="text-right">
-									<button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar009">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
-								</td>
-								<td>
-									<!-- Modal -->
-									<div class="modal fade" id="iniciar009" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-										<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-											<div class="modal-content">
-												<div class="modal-header d-flex justify-content-center align-itens-center container">
-													<h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
-													<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                        <hr>
+                                                        <h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
+                                                        <div class="form-group">
+                                                            <label for="inputSetor">Encarregados</label>
+                                                            <input type="text" class="form-control" id="inputSetor" disabled>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                            </tr>
+                            <tr>
+                                <td>010</td>
+                                <td>Informática</td>
+                                <td>Internet Instável</td>
+                                <td>20/11/2018</td>
+                                <td>Jõao, José</td>
+                                <td class="text-right">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar010">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
+                                </td>
+                                <td>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="iniciar010" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center align-itens-center container">
+                                                    <h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
+                                                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>-->
-												</div>
-												<div class="modal-body">
-													<form>
-														<div class="form-row">
-															<div class="form-group col-md-6">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-6">
-																<label for="inputPrioridade">Prioridade</label>
-																<input type="text" class="form-control" id="inputPrioridade" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputPrioridade">Prioridade</label>
+                                                                <input type="text" class="form-control" id="inputPrioridade" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-12">
-																<label for="inputServico">Serviço</label>
-																<input type="text" class="form-control" id="inputServico" disabled>
-															</div>
-														</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-12">
+                                                                <label for="inputServico">Serviço</label>
+                                                                <input type="text" class="form-control" id="inputServico" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-row">
-															<div class="form-group col-md-5">
-																<label for="inputSolicitante">Solicitante</label>
-																<input type="text" class="form-control" id="inputSolicitante" disabled>
-															</div>
-															<div class="form-group col-md-4">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-5">
+                                                                <label for="inputSolicitante">Solicitante</label>
+                                                                <input type="text" class="form-control" id="inputSolicitante" disabled>
+                                                            </div>
+                                                            <div class="form-group col-md-4">
+                                                                <label for="inputSetor">Setor</label>
+                                                                <input type="text" class="form-control" id="inputSetor" disabled>
+                                                            </div>
 
-															<div class="form-group col-md-3">
-																<label for="inputHorario">Horário do Pedido</label>
-																<input type="text" class="form-control" id="inputHorario" disabled>
-															</div>
-														</div>
+                                                            <div class="form-group col-md-3">
+                                                                <label for="inputHorario">Horário do Pedido</label>
+                                                                <input type="text" class="form-control" id="inputHorario" disabled>
+                                                            </div>
+                                                        </div>
 
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
-														</div>
-														<hr>
-														<h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
-														<div class="form-group">
-															<label for="inputSetor">Encarregados</label>
-															<input type="text" class="form-control" id="inputSetor" placeholder="Quem foi realizar o serviço" required="">
-														</div>
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" placeholder="Descrição"></textarea>
-														</div>
-													</form>
-												</div>
-												<div class="modal-footer">
-													<button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- /Modal -->
-							</tr>
-							<tr>
-								<td>010</td>
-								<td>per</td>
-								<td>inceptos</td>
-								<td>himenaeos</td>
-								<td></td>
-								<td class="text-right">
-									<button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#iniciar010">Info&nbsp;&nbsp;<span class="fa fa-question-circle"></span></button>
-								</td>
-								<td>
-									<!-- Modal -->
-									<div class="modal fade" id="iniciar010" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-										<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-											<div class="modal-content">
-												<div class="modal-header d-flex justify-content-center align-itens-center container">
-													<h1 class="modal-title" id="exampleModalCenterTitle">Informações</h1>
-													<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>-->
-												</div>
-												<div class="modal-body">
-													<form>
-														<div class="form-row">
-															<div class="form-group col-md-6">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                        <h5 class="modal-title text-center" id="exampleModalCenterTitle">Informações Adicionais</h5>
+                                                        <div class="form-group">
+                                                            <label for="inputSetor">Encarregados</label>
+                                                            <input type="text" class="form-control" id="inputSetor" disabled>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="Descricao">Descrição</label>
+                                                            <textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <nav aria-label="Navegação de página exemplo">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1"><span class="fa fa-angle-double-left">&nbsp;&nbsp;</span>Anterior</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Próximo<span>&nbsp;&nbsp;<span class="fa fa-angle-double-right"></span></span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </main>
+        </div>
+    </div>
 
-															<div class="form-group col-md-6">
-																<label for="inputPrioridade">Prioridade</label>
-																<input type="text" class="form-control" id="inputPrioridade" disabled>
-															</div>
-														</div>
-
-														<div class="form-row">
-															<div class="form-group col-md-12">
-																<label for="inputServico">Serviço</label>
-																<input type="text" class="form-control" id="inputServico" disabled>
-															</div>
-														</div>
-
-														<div class="form-row">
-															<div class="form-group col-md-5">
-																<label for="inputSolicitante">Solicitante</label>
-																<input type="text" class="form-control" id="inputSolicitante" disabled>
-															</div>
-															<div class="form-group col-md-4">
-																<label for="inputSetor">Setor</label>
-																<input type="text" class="form-control" id="inputSetor" disabled>
-															</div>
-
-															<div class="form-group col-md-3">
-																<label for="inputHorario">Horário do Pedido</label>
-																<input type="text" class="form-control" id="inputHorario" disabled>
-															</div>
-														</div>
-
-														<div class="form-group">
-															<label for="Descricao">Descrição</label>
-															<textarea class="form-control" id="Descricao" rows="4" disabled></textarea>
-														</div>
-													</form>
-												</div>
-												<div class="modal-footer">
-													<button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- /Modal -->
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<nav aria-label="Navegação de página exemplo">
-					<ul class="pagination justify-content-end">
-						<li class="page-item disabled">
-							<a class="page-link" href="#" tabindex="-1"><span class="fa fa-angle-double-left">&nbsp;&nbsp;</span>Anterior</a>
-						</li>
-						<li class="page-item active"><a class="page-link" href="#">1</a></li>
-						<li class="page-item"><a class="page-link" href="#">2</a></li>
-						<li class="page-item"><a class="page-link" href="#">3</a></li>
-						<li class="page-item">
-							<a class="page-link" href="#">Próximo<span>&nbsp;&nbsp;<span class="fa fa-angle-double-right"></span></span></a>
-						</li>
-					</ul>
-				</nav>
-			</main>
-		</div>
-	</div>
-	<div id="rodape">
-		<span class="footer-text">&copy; Copyright 2018 - Kaue - JoJo | JoJo -Kaue, todos os direitos reservados.</span>
-	</div>
-
-	<!-- Bootstrap core JavaScript
+    <!-- Bootstrap core JavaScript
     ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script>
-		window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')
-
-	</script>
-	<script src="assets/js/vendor/popper.min.js"></script>
-	<script src="dist/js/bootstrap.min.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- #### COPYRIGHT #### -->
+    <div id="rodape" class="text-botton">
+        <span class="footer-text">&copy; Copyright 2018 - Kaue - JoJo | JoJo -Kaue, todos os direitos reservados.</span>
+    </div>
+    <!-- #### COPYRIGHT #### -->
 
 </body>
 

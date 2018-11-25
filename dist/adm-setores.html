@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="assets/img/logo-bj.png">
+    <link rel="icon" href="favicon.ico">
 
-    <title>Setores</title>
+    <title>Dashboard Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
 
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
-                <a class="nav-link" href="admin.html">
+                <a class="nav-link" href="index.html">
                     <span class="fa fa-sign-out-alt"></span>
                     Sair
                 </a>
@@ -91,15 +91,15 @@
                                             </div>
                                             <h6 class="text-left">O setor presta serviços?</h6>
                                             <div class="form-row">
-                                                <div class="custom-control custom-radio custom-control-inline">
-                                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                                    <label class="custom-control-label" for="customRadioInline1">Sim</label>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Sim</label>
+                                                </div>&nbsp;
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Não</label>
                                                 </div>
-                                                <div class="custom-control custom-radio custom-control-inline">
-                                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                                    <label class="custom-control-label" for="customRadioInline2">Não</label>
-                                                </div>
-                                            </div> 
+                                            </div>
                                         </form>
                                     </div>
                                     <div class="modal-footer">
@@ -159,13 +159,13 @@
                                                     </div>
                                                     <h6 class="text-left">O setor presta serviços?</h6>
                                                     <div class="form-row">
-                                                        <div class="custom-control custom-radio custom-control-inline">
-                                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                                            <label class="custom-control-label" for="customRadioInline1">Sim</label>
-                                                        </div>
-                                                        <div class="custom-control custom-radio custom-control-inline">
-                                                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                                            <label class="custom-control-label" for="customRadioInline2">Não</label>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sim</label>
+                                                        </div>&nbsp;
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Não</label>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -183,18 +183,27 @@
                                     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header d-flex justify-content-center align-itens-center container">
-                                                <h2 class="modal-title" id="exampleModalCenterTitle">Você tem certeza que quer desativar este setor?</h2>
+                                                <h1 class="modal-title" id="exampleModalCenterTitle">Desativação do setor</h1>
                                             </div>
                                             <div class="modal-body">
                                                 <form id="disablesetor">
-                                                    <div class="modal-content text-center">
-                                                        <button type="reset" class="btn btn-success" data-dismiss="modal">Cancelar</button>
-                                                        <br>
-                                                        <button type="submit" class="btn btn-danger">Desativar</button>
+                                                    <h6 class="text-center">Deseja desativar este setor?</h6>
+                                                    <div class="form-row">
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sim</label>
+                                                        </div>&nbsp;
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Não</label>
+                                                        </div>
                                                     </div>
                                                 </form>
                                             </div>
-
+                                            <div class="modal-footer">
+                                                <button type="reset" class="btn btn-success" data-dismiss="modal">Cancelar</button>
+                                                <button type="submit" class="btn btn-danger">Desativar</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -205,20 +214,18 @@
                                 <td>Administração</td>
                                 <td class="text-center"><span class="badge badge-pill badge-danger">NÃO PRESTA SERVIÇOS</span></td>
                                 <td class="text-right">
-                                    <button type="button" data-toggle="modal" data-target="#editsetor2" class="btn btn-sm btn-info">
+                                    <a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#editsetor1">
                                         <span class="fa fa-edit"></span>
-                                    </button>
-
-                                    <button type="button" data-toggle="modal" data-target="#desativarsetor2" class="btn btn-sm btn-danger">
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-danger">
                                         <span class="fa fa-trash-alt"></span>
-                                    </button>
+                                    </a>
                                 </td>
-                                <!-- EDIT SETOR-->
-                                <div class="modal fade" id="editsetor2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal fade" id="#editsetor1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header d-flex justify-content-center align-itens-center container">
-                                                <h1 class="modal-title" id="exampleModalCenterTitle">Editar Setor</h1>
+                                                <h1 class="modal-title" id="exampleModalCenterTitle">Novo Setor</h1>
                                             </div>
                                             <div class="modal-body">
                                                 <form>
@@ -236,13 +243,13 @@
                                                     </div>
                                                     <h6 class="text-left">O setor presta serviços?</h6>
                                                     <div class="form-row">
-                                                        <div class="custom-control custom-radio custom-control-inline">
-                                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                                            <label class="custom-control-label" for="customRadioInline1">Sim</label>
-                                                        </div>
-                                                        <div class="custom-control custom-radio custom-control-inline">
-                                                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                                            <label class="custom-control-label" for="customRadioInline2">Não</label>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Sim</label>
+                                                        </div>&nbsp;
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Não</label>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -254,28 +261,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /EDIT SETOR -->
-                                <!-- DISABLE SETOR-->
-                                <div class="modal fade" id="desativarsetor2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header d-flex justify-content-center align-itens-center container">
-                                                <h2 class="modal-title" id="exampleModalCenterTitle">Você tem certeza que quer desativar este setor?</h2>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form id="disablesetor">
-                                                    <div class="modal-content text-center">
-                                                        <button type="reset" class="btn btn-success" data-dismiss="modal">Cancelar</button>
-                                                        <br>
-                                                        <button type="submit" class="btn btn-danger">Desativar</button>
-                                                    </div>
-                                                </form>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /DESABLE SETOR -->
                             </tr>
                         </tbody>
                     </table>
